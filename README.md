@@ -1,2 +1,2 @@
-# lablynx
-LabLynx theme for TW5.
+# wikipress
+WikiPress.pub theme for TW5.
