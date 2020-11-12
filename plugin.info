@@ -1,0 +1,10 @@
+{
+    "title": "$:/themes/RobertP3469/wikipress",
+    "description": "WikiPress theme for TW5",
+    "author": "Robert Payne",
+    "version": "0.0.1",
+    "core-version": ">=5.0.0",
+    "source": "https://github.com/RobertP3469/wikipress",
+    "plugin-type": "theme",
+	"list": "readme license"
+}
