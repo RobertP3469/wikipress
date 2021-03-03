@@ -1,0 +1,5 @@
+title: $:/themes/RobertP3469/wikipress/logo-container
+
+<div class="logo-container">
+{{$:/wikipress/logo}}
+</div>

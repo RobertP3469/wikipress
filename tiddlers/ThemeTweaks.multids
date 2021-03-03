@@ -1,0 +1,18 @@
+title: $:/language/ThemeTweaks/
+
+ThemeTweaks: Theme Tweaks
+ThemeTweaks/Hint: You can tweak certain aspects of the ''Wikipress'' theme.
+Options: Options
+Options/TopbarBackgroundColor: Topbar background color
+Options/SidebarBackgroundColor: Sidebar background color
+Options/TiddlerBackgroundColor: Background color for tiddler body 
+Options/CodeWrapping: Wrap long lines in code blocks
+Settings: Settings
+Settings/FontFamily: Font family
+Settings/CodeFontFamily: Code font family
+Settings/EditorFontFamily: Editor font family
+Metrics: Sizes
+Metrics/FontSize: Font size
+Metrics/LineHeight: Line height
+Metrics/BodyFontSize: Font size for tiddler body
+Metrics/BodyLineHeight: Line height for tiddler body

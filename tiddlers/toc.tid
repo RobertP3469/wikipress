@@ -1,0 +1,9 @@
+title: $:/core/ui/SideBarSegments/toc
+caption: Contents
+tags: $:/tags/SideBarSegment
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'TableOfContents'>>
+
+</div>

@@ -1,0 +1,29 @@
+title: $:/themes/RobertP3469/wikipress/themetweaks
+tags: $:/tags/ControlPanel/Appearance
+caption: {{$:/language/ThemeTweaks/ThemeTweaks}}
+
+\define lingo-base() $:/language/ThemeTweaks/
+
+
+<<lingo ThemeTweaks/Hint>>
+
+! <<lingo Options>>
+
+|<$link to="$:/themes/RobertP3469/wikipress/options/codewrapping"><<lingo Options/CodeWrapping>></$link> |<$select tiddler="$:/themes/RobertP3469/wikipress/options/codewrapping"><option value="pre">{{$:/language/No}}</option><option value="pre-wrap">{{$:/language/Yes}}</option></$select> |
+|<$link to="$:/themes/RobertP3469/wikipress/options/topbarbackgroundcolor"><<lingo Options/TopbarBackgroundColor>></$link> | <$edit-text tiddler="$:/themes/RobertP3469/wikipress/options/topbarbackgroundcolor" default="" tag="input"/> |
+|<$link to="$:/themes/RobertP3469/wikipress/options/sidebarbackgroundcolor"><<lingo Options/SidebarBackgroundColor>></$link> | <$edit-text tiddler="$:/themes/RobertP3469/wikipress/options/sidebarbackgroundcolor" default="" tag="input"/> |
+
+
+! <<lingo Settings>>
+
+|<$link to="$:/themes/RobertP3469/wikipress/settings/fontfamily"><<lingo Settings/FontFamily>></$link> |<$edit-text tiddler="$:/themes/RobertP3469/wikipress/settings/fontfamily" default="" tag="input"/> | |
+|<$link to="$:/themes/RobertP3469/wikipress/settings/codefontfamily"><<lingo Settings/CodeFontFamily>></$link> |<$edit-text tiddler="$:/themes/RobertP3469/wikipress/settings/codefontfamily" default="" tag="input"/> | |
+|<$link to="$:/themes/RobertP3469/wikipress/settings/editorfontfamily"><<lingo Settings/EditorFontFamily>></$link> |<$edit-text tiddler="$:/themes/RobertP3469/wikipress/settings/editorfontfamily" default="" tag="input"/> | |
+
+
+! <<lingo Metrics>>
+
+|<$link to="$:/themes/RobertP3469/wikipress/metrics/fontsize"><<lingo Metrics/FontSize>></$link> |<$edit-text tiddler="$:/themes/RobertP3469/wikipress/metrics/fontsize" default="" tag="input"/> |
+|<$link to="$:/themes/RobertP3469/wikipress/metrics/lineheight"><<lingo Metrics/LineHeight>></$link> |<$edit-text tiddler="$:/themes/RobertP3469/wikipress/metrics/lineheight" default="" tag="input"/> |
+|<$link to="$:/themes/RobertP3469/wikipress/metrics/bodyfontsize"><<lingo Metrics/BodyFontSize>></$link> |<$edit-text tiddler="$:/themes/RobertP3469/wikipress/metrics/bodyfontsize" default="" tag="input"/> |
+|<$link to="$:/themes/RobertP3469/wikipress/metrics/bodylineheight"><<lingo Metrics/BodyLineHeight>></$link> |<$edit-text tiddler="$:/themes/RobertP3469/wikipress/metrics/bodylineheight" default="" tag="input"/> |

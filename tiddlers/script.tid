@@ -1,0 +1,60 @@
+title: $:/themes/RobertP3469/wikipress/script
+tags: $:/tags/RawMarkup
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+	leftBar = document.querySelector(".tc-topbar-left");
+	rightBar = document.querySelector(".tc-topbar-right");
+	dropZone = document.querySelector(".tc-dropzone");
+	refNode = document.querySelector(".tc-sidebar-scrollable");
+	refNode2 = document.querySelector(".tc-sidebar-scrollable").firstChild;
+	sidebarHeader = document.querySelector(".tc-sidebar-scrollable .tc-sidebar-header");
+	
+	middleBar = document.createElement("span");
+	middleBar.classList.add("tc-topbar", "tc-topbar-middle");
+	
+	container = document.createElement("div");
+	container.classList.add("tc-topbar-container","tc-adjust-top-of-scroll");
+	container.appendChild(leftBar);
+	container.appendChild(middleBar);
+	container.appendChild(rightBar);
+	dropZone.insertBefore(container, refNode);
+	
+	pageControls = document.querySelector(".tc-sidebar-header .tc-page-controls");
+	el = pageControls.closest(".tc-reveal");
+	middleBar.appendChild(pageControls);
+	el.remove();
+	
+	document.querySelector(".tc-sidebar-tabs").remove();
+	
+	switchTab = document.createElement("span");
+	switchTab.id = 'switch';
+	switchTab.classList.add("tc-switch" ,"expanded");
+	switchTab.addEventListener("click", handleSlide);
+	refNode2.insertBefore(switchTab,sidebarHeader);
+});
+
+function handleSlide(){
+	if(this.classList.contains("expanded")){
+		let elements = document.getElementsByClassName('tc-sidebar-scrollable');
+		elements[0].style.width = "0";
+		elements[0].style.paddingLeft = "0";
+		elements[0].style.paddingRight = "0";
+		this.classList.replace("expanded","collapsed");
+		let river = document.getElementsByClassName('tc-story-river');
+		river[0].style.marginLeft = "100px";
+	} else {
+		let elements = document.getElementsByClassName('tc-sidebar-scrollable');
+		elements[0].style.removeProperty("width");
+		elements[0].style.removeProperty("padding-right");
+		elements[0].style.removeProperty("padding-left");
+		this.classList.replace("collapsed","expanded");
+		let river = document.getElementsByClassName('tc-story-river');
+		river[0].style.removeProperty("margin-left");		
+	}
+}//handleSlide
+
+
+
+</script>
